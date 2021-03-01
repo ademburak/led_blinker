@@ -1,3 +1,4 @@
+#!/bin/bash
 FROM arm32v7/python:3.8-buster
 
 WORKDIR /usr/src/app
