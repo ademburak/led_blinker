@@ -6,9 +6,9 @@ WORKDIR /usr/src/app
 COPY led_blinker.py ./
 COPY requirements.txt ./
 # Intall the rpi.gpio python module
-RUN pip3 install --no-cache-dir rpi.gpio
+RUN pip install --no-cache-dir rpi.gpio
 
-RUN pip3 install --upgrade pip && pip3 install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install --upgrade pip && pip3 install --trusted-host pypi.python.org -r requirements.txt
 
 
 # Trigger Python script
