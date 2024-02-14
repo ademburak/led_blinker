@@ -10,7 +10,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir rpi.gpio
 
 RUN pip install --upgrade pip && pip3 install --trusted-host pypi.python.org -r requirements.txt
-
+#test
 
 # Trigger Python script
 CMD ["python3", "./led_blinker.py"]
